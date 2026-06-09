@@ -226,8 +226,8 @@ Transform:
   m_GameObject: {fileID: 203187832}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.03758, y: -0, z: -11.91}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 2.0782, y: -0, z: -9.1457}
+  m_LocalScale: {x: 1.4232, y: 1, z: 1.5529}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -415,10 +415,30 @@ PrefabInstance:
       propertyPath: near clip plane
       value: 0.01
       objectReference: {fileID: 0}
+    - target: {fileID: 114497868231759342, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
+      propertyPath: rigidbody
+      value: 
+      objectReference: {fileID: 1899157575}
+    - target: {fileID: 114497868231759342, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
+      propertyPath: inputActions
+      value: 
+      objectReference: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     - target: {fileID: 114503055206606986, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
       propertyPath: isGrounded
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114762042097486276, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
+      propertyPath: InputActions
+      value: 
+      objectReference: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+    - target: {fileID: 114762042097486276, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
+      propertyPath: crouchYHeadPosition
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114963311885979670, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
+      propertyPath: rigidbody
+      value: 
+      objectReference: {fileID: 1899157575}
     - target: {fileID: 114963311885979670, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
       propertyPath: InputActions
       value: 
@@ -428,6 +448,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
+--- !u!54 &1899157575 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 54063890643546284, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
+  m_PrefabInstance: {fileID: 1780267262}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

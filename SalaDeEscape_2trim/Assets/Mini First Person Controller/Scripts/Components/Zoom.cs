@@ -1,18 +1,22 @@
 ﻿using UnityEngine;
+using UnityEngine.InputSystem;
 
 [ExecuteInEditMode]
 public class Zoom : MonoBehaviour
 {
     Camera camera;
-    public float defaultFOV = 60;
-    public float maxZoomFOV = 15;
+    public float defaultFOV;
+    public float maxZoomFOV;
     [Range(0, 1)]
     public float currentZoom;
-    public float sensitivity = 1;
+    public float sensitivity;
 
+    public InputActionAsset inputActions;
+    private InputAction ScrollMAction;
 
     void Awake()
     {
+        ScrollMAction = InputSystem.actions.FindAction("ScrollWheel");
         // Get the camera on this gameObject and the defaultZoom.
         camera = GetComponent<Camera>();
         if (camera)
