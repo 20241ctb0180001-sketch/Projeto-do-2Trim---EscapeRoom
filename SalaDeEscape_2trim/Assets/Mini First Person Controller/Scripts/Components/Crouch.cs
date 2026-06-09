@@ -8,14 +8,14 @@ public class Crouch : MonoBehaviour
     [Tooltip("Movement to slow down when crouched.")]
     public FirstPersonMovement movement;
     [Tooltip("Movement speed when crouched.")]
-    public float movementSpeed = 2;
+    public float movementSpeed;
 
     [Header("Low Head")]
     [Tooltip("Head to lower when crouched.")]
     public Transform headToLower;
     [HideInInspector]
     public float? defaultHeadYLocalPosition;
-    public float crouchYHeadPosition = 1;
+    public float crouchYHeadPosition;
     
     [Tooltip("Collider to lower when crouched.")]
     public CapsuleCollider colliderToLower;
